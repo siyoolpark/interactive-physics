@@ -15,8 +15,7 @@ from xgboost import XGBRegressor
 import time
 
 # Load dataset
-sav_file_path = r'C:\Users\siyoo\Downloads\kyrbs2023\kyrbs2023.sav'
-df, meta = pyreadstat.read_sav(sav_file_path)
+df, meta = pyreadstat.read_sav('kyrbs2023.sav')
 
 # Select variables for analysis
 analysis_columns = ['PA_SWK_N', 'WT', 'M_STR', 'INT_SPWD_TM']
